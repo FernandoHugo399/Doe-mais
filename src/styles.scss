@@ -11,8 +11,22 @@ html, body{
 :root{
   --main-background-color: #1C0F23;
   --color-main-white: #FCF5FD;
+  --color-main-icons: #AA00FF;
+  --color-main-icons-hover: #6D0B9E;
+  --font-open-sans: 'Open Sans', sans-serif;
+  --font-poppins: 'Poppins', sans-serif;
+  --font-logo: 'Rum Raisin', sem serifa;
 }
 
 .center{
   padding: 0 2%;
+  width: 100%;
+  margin: 0 auto;
+  max-width: 1517px;
+}
+
+@media screen and (max-width: 1600px) {
+  .center{
+    max-width: 1400px;
+  }
 }

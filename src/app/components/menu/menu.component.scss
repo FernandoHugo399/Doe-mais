@@ -1,4 +1,4 @@
-.sidebar{
+.section-menu{
   background-color: var(--main-background-color);
 }
 
@@ -9,14 +9,45 @@
   align-items: center;
   color: var(--color-main-white);
   height: 110px;
+  font-family: var(--font-open-sans);
 }
 
 .menu .logo{
   width: 100%;
-  max-width: 320px;
+  max-width: 340px;
+  display: flex;
+  align-items: center;
 }
 
 .menu .logo .logo-img{
   width: 80px;
   height: 80px;
+  margin-right: 10px;
+}
+
+.menu .logo .text{
+  font-size: 48px;
+  font-family: 'Rum Raisin';
+}
+
+.menu .logo .text::after{
+  content: ' MAIS';
+}
+
+.menu .menu-itens ul li{
+  display: inline-block;
+  padding: 0 25px;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.menu .menu-itens ul li:last-of-type{
+  background-color: var(--color-main-icons);
+  padding: 10px 25px;
+  border-radius: 20px;
+}
+
+.menu .menu-itens ul li:last-of-type:hover{
+  background-color: var(--color-main-icons-hover);
+  cursor: pointer;
 }
