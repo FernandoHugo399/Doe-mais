@@ -15,11 +15,10 @@ html, body{
   --color-main-icons-hover: #6D0B9E;
   --font-open-sans: 'Open Sans', sans-serif;
   --font-poppins: 'Poppins', sans-serif;
-  --font-logo: 'Rum Raisin', sem serifa;
 }
 
 .center{
-  padding: 0 2%;
+  padding: 0 4%;
   width: 100%;
   margin: 0 auto;
   max-width: 1517px;
@@ -27,6 +26,6 @@ html, body{
 
 @media screen and (max-width: 1600px) {
   .center{
-    max-width: 1400px;
+    max-width: 1280px;
   }
 }

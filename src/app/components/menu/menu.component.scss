@@ -14,24 +14,13 @@
 
 .menu .logo{
   width: 100%;
-  max-width: 340px;
+  max-width: 280px;
   display: flex;
   align-items: center;
 }
 
-.menu .logo .logo-img{
-  width: 80px;
-  height: 80px;
-  margin-right: 10px;
-}
-
-.menu .logo .text{
-  font-size: 48px;
-  font-family: 'Rum Raisin';
-}
-
-.menu .logo .text::after{
-  content: ' MAIS';
+.menu .logo img{
+  width: 100%;
 }
 
 .menu .menu-itens ul li{
@@ -50,4 +39,25 @@
 .menu .menu-itens ul li:last-of-type:hover{
   background-color: var(--color-main-icons-hover);
   cursor: pointer;
+}
+
+@media screen and (max-width: 1600px){
+  .menu{
+    height: 100px;
+  }
+
+  .menu .logo{
+    max-width: 240px;
+  }
+
+  .menu .menu-itens ul li{
+    padding: 0 20px;
+    font-size: 20px;
+  }
+
+  .menu .menu-itens ul li:last-of-type{
+    background-color: var(--color-main-icons);
+    padding: 8px 20px;
+    border-radius: 20px;
+  }
 }
