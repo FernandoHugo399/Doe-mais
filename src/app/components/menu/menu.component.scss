@@ -1,5 +1,6 @@
 .section-menu{
   background-color: var(--main-background-color);
+  font-family: var(--font-open-sans);
 }
 
 .menu{
@@ -9,7 +10,6 @@
   align-items: center;
   color: var(--color-main-white);
   height: 110px;
-  font-family: var(--font-open-sans);
 }
 
 .menu .logo{
@@ -23,7 +23,7 @@
   width: 100%;
 }
 
-.menu .menu-mobile{
+.menu .icon-menu-mobile{
   display: none;
   width: 50px;
   height: 50px;
@@ -34,15 +34,16 @@
   cursor: pointer;
 }
 
-.menu .menu-mobile ul{
-  display: none;
-}
-
 .menu .menu-desktop ul li{
   display: inline-block;
   padding: 0 25px;
   font-size: 24px;
-  font-weight: 600;
+  font-weight: 500;
+}
+
+.menu .menu-desktop ul li a{
+  color: var(--color-main-white);
+  text-decoration: none;
 }
 
 .menu .menu-desktop ul li:last-of-type{
@@ -54,6 +55,30 @@
 .menu .menu-desktop ul li:last-of-type:hover{
   background-color: var(--color-main-icons-hover);
   cursor: pointer;
+}
+
+.menu-mobile{
+  height: 0;
+  overflow: hidden;
+  transition: 0.3s;
+  width: 100%;
+  text-align: center;
+}
+
+.menu-mobile ul li{
+  list-style-type: none;
+  padding: 10px 0 15px 0;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.menu-mobile ul li a{
+  color: var(--color-main-white);
+  text-decoration: none;
+}
+
+.mobah{
+  height: 200px !important;
 }
 
 
@@ -73,7 +98,6 @@
   }
 
   .menu .menu-desktop ul li:last-of-type{
-    background-color: var(--color-main-icons);
     padding: 8px 20px;
     border-radius: 20px;
   }
@@ -94,7 +118,6 @@
   }
 
   .menu .menu-desktop ul li:last-of-type{
-    background-color: var(--color-main-icons);
     padding: 7px 18px;
     border-radius: 20px;
   }
@@ -115,7 +138,6 @@
   }
 
   .menu .menu-desktop ul li:last-of-type{
-    background-color: var(--color-main-icons);
     padding: 7px 16px;
     border-radius: 20px;
   }
@@ -127,7 +149,7 @@
     display: none;
   }
 
-  .menu .menu-mobile{
+  .menu .icon-menu-mobile{
     display: block;
   }
 }

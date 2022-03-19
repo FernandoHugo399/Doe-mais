@@ -5,25 +5,27 @@
           <img src="assets/images/Logo-with-name.png" alt="logo Doe-Mais">
       </div> <!-- logo -->
 
-      <nav class="menu-mobile">
-        <ul>
-          <li>Quem somos?</li>
-          <li>Instituições</li>
-          <li>Contate-nos</li>
-          <li>Como doar?</li>
-        </ul>
-      </nav> <!-- menu-mobile -->
+      <div class="icon-menu-mobile" (click)="showHideMenu()"></div>
 
       <nav class="menu-desktop">
         <ul>
-          <li>Quem somos?</li>
-          <li>Instituições</li>
-          <li>Contate-nos</li>
-          <li>Como doar?</li>
+          <li><a routerLink="#">Quem somos?</a></li>
+          <li><a routerLink="#">Instituições</a></li>
+          <li><a routerLink="#">Contate-nos</a></li>
+          <li><a routerLink="#">Como doar?</a></li>
         </ul>
       </nav> <!-- menu-desktop -->
-
     </div> <!-- menu -->
+
+    <nav class="menu-mobile" #menuMobile>
+      <ul>
+        <li><a routerLink="#">Quem somos?</a></li>
+          <li><a routerLink="#">Instituições</a></li>
+          <li><a routerLink="#">Contate-nos</a></li>
+          <li><a routerLink="#">Como doar?</a></li>
+      </ul>
+    </nav> <!-- menu-mobile -->
+
   </div> <!-- center -->
 </section> <!-- section-menu -->
 
