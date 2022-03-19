@@ -30,6 +30,6 @@ describe('AppComponent', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.nativeElement as HTMLElement;
-    expect(compiled.querySelector('.content span')?.textContent).toContain('app app is running!');
+    expect(compiled.querySelector('main noscript')?.textContent).toContain('You need to enable JavaScript to run this app.');
   });
 });
