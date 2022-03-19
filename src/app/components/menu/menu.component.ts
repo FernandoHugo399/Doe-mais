@@ -10,15 +10,16 @@ export class MenuComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
+    addEventListener('resize', ()=>{
+      let menu = this.menuMobile.nativeElement
+      if(menu.classList.contains('mobah')) menu.classList.remove('mobah')
+    })
   }
 
   showHideMenu(): void{
     let menu = this.menuMobile.nativeElement
-    if(menu.classList.contains('mobah')) {
-      menu.classList.remove('mobah')
-    } else {
-      menu.classList.add('mobah')
-    }
+    if(menu.classList.contains('mobah')) menu.classList.remove('mobah')
+    else menu.classList.add('mobah')
   }
 
 }
