@@ -1,5 +1,5 @@
 .section-menu{
-  background-color: var(--main-background-color);
+  background-image: linear-gradient(var(--main-background-color), var(--low-contrast-background-color));
   font-family: var(--font-open-sans);
 }
 
@@ -30,11 +30,18 @@
   padding: 0 25px;
   font-size: 24px;
   font-weight: 500;
+
 }
 
 .menu .menu-desktop ul li a{
+  transition: 0.1s;
   color: var(--color-main-white);
   text-decoration: none;
+}
+
+.menu .menu-desktop ul li a:hover{
+  font-size: 25px;
+  color: var(--color-main-white-hover);
 }
 
 .menu .menu-desktop ul li:last-of-type{
@@ -52,8 +59,8 @@
 /* menu-mobile */
 .menu .icon-menu-mobile{
   display: none;
-  width: 50px;
-  height: 50px;
+  width: 40px;
+  height: 40px;
   background-image: url('../../../assets/images/menu.png');
   background-repeat: no-repeat;
   background-size: cover;
@@ -79,6 +86,12 @@
 .menu-mobile ul li a{
   color: var(--color-main-white);
   text-decoration: none;
+  transition: 0.1s;
+}
+
+.menu-mobile ul li a:hover{
+  color: var(--color-main-white-hover);
+  font-size: 17px;
 }
 
 .mobah{
@@ -101,6 +114,10 @@
     font-size: 20px;
   }
 
+  .menu .menu-desktop ul li a:hover{
+    font-size: 21px;
+  }
+
   .menu .menu-desktop ul li:last-of-type{
     padding: 8px 20px;
     border-radius: 20px;
@@ -119,6 +136,10 @@
   .menu .menu-desktop ul li{
     padding: 0 18px;
     font-size: 18px;
+  }
+
+  .menu .menu-desktop ul li a:hover{
+    font-size: 19px;
   }
 
   .menu .menu-desktop ul li:last-of-type{
@@ -141,6 +162,10 @@
     font-size: 16px;
   }
 
+  .menu .menu-desktop ul li a:hover{
+    font-size: 17px;
+  }
+
   .menu .menu-desktop ul li:last-of-type{
     padding: 7px 16px;
     border-radius: 20px;
@@ -149,11 +174,31 @@
 
 
 @media screen and (max-width: 900px){
+
+  .menu{
+    height: 70px;
+  }
+
+  .menu .logo{
+    max-width: 180px;
+  }
+
   .menu .menu-desktop{
     display: none;
   }
 
   .menu .icon-menu-mobile{
     display: block;
+  }
+}
+
+@media screen and (max-width: 500px){
+  .menu .logo{
+    max-width: 170px;
+  }
+
+  .menu .icon-menu-mobile{
+    width: 35px;
+    height: 35px;
   }
 }
