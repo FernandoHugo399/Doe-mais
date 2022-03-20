@@ -1,3 +1,4 @@
+import { MenuService } from './menu.service';
 import { Component, OnInit, ViewChild } from '@angular/core';
 
 @Component({
@@ -7,19 +8,10 @@ import { Component, OnInit, ViewChild } from '@angular/core';
 })
 export class MenuComponent implements OnInit {
   @ViewChild('menuMobile') menuMobile!: { nativeElement: HTMLDivElement; };
-  constructor() { }
+  constructor(private MenuService: MenuService) { }
 
-  ngOnInit(): void {
-    addEventListener('resize', ()=>{
-      let menu = this.menuMobile.nativeElement
-      if(menu.classList.contains('mobah')) menu.classList.remove('mobah')
-    })
-  }
+  ngOnInit(): void { this.MenuService.resizeHideMenu(this.menuMobile.nativeElement) }
 
-  showHideMenu(): void{
-    let menu = this.menuMobile.nativeElement
-    if(menu.classList.contains('mobah')) menu.classList.remove('mobah')
-    else menu.classList.add('mobah')
-  }
+  showHideMenu(): void{ this.MenuService.showHideMenu(this.menuMobile.nativeElement) }
 
 }
