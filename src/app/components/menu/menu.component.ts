@@ -10,8 +10,12 @@ export class MenuComponent implements OnInit {
   @ViewChild('menuMobile') menuMobile!: { nativeElement: HTMLDivElement; };
   constructor(private MenuService: MenuService) { }
 
-  ngOnInit(): void { this.MenuService.resizeHideMenu(this.menuMobile.nativeElement) }
+  ngOnInit(): void { }
 
-  showHideMenu(): void{ this.MenuService.showHideMenu(this.menuMobile.nativeElement) }
+  showHideMenu(): void{
+    this.MenuService.showHideMenu(this.menuMobile.nativeElement)
+    this.MenuService.resizeHideMenu(this.menuMobile.nativeElement)
+  }
+
 
 }
