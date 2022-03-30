@@ -1,5 +1,7 @@
 .section-menu{
-  background-image: linear-gradient(var(--main-background-color), var(--low-contrast-background-color));
+  position: fixed;
+  width: 100%;
+  background-color: var(--main-background-color);
   font-family: var(--font-open-sans);
 }
 
@@ -30,6 +32,7 @@
 
 
 /* menu desktop */
+
 .menu .menu-desktop ul li{
   display: inline-block;
   padding: 0 25px;
@@ -75,18 +78,27 @@
 }
 
 .menu-mobile{
-  height: 0;
-  overflow: hidden;
+  width: 0px;
   transition: 0.3s;
-  width: 100%;
+  overflow: hidden;
   text-align: center;
+  position: fixed;
+  right: 0;
+  height: 100%;
+  background-image: linear-gradient(var(--main-background-color), var(--low-contrast-background-color));
+}
+
+.menu-mobile ul{
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+  height: calc(100% - 110px);
 }
 
 .menu-mobile ul li{
-  list-style-type: none;
-  padding: 15px 0 20px 0;
   font-size: 16px;
   font-weight: 600;
+  list-style-type: none;
 }
 
 .menu-mobile ul li a{
@@ -101,7 +113,7 @@
 }
 
 .mobah{
-  height: 230px !important;
+  width: 70vw;
 }
 
 
@@ -109,6 +121,10 @@
 @media screen and (max-width: 1600px){
   .menu{
     height: 100px;
+  }
+
+  .menu-mobile ul{
+    height: calc(100% - 100px);
   }
 
   .menu .logo{
@@ -139,6 +155,10 @@
     height: 90px;
   }
 
+  .menu-mobile ul{
+    height: calc(100% - 90px);
+  }
+
   .menu .logo{
     max-width: 220px;
   }
@@ -165,6 +185,10 @@
 @media screen and (max-width: 1024px){
   .menu{
     height: 80px;
+  }
+
+  .menu-mobile ul{
+    height: calc(100% - 80px);
   }
 
   .menu .logo{
@@ -195,6 +219,10 @@
 
   .menu{
     height: 70px;
+  }
+
+  .menu-mobile ul{
+    height: calc(100% - 70px);
   }
 
   .menu .logo{

@@ -7,11 +7,10 @@ import { Injectable } from '@angular/core';
 export class MenuService implements IMenuService {
 
   showHideMenu(menu: HTMLDivElement): void {
-    if(menu.classList.contains('mobah')) menu.classList.remove('mobah')
-    else menu.classList.add('mobah')
+    menu.classList.toggle('mobah')
   }
 
   resizeHideMenu(menu: HTMLDivElement): void {
-    addEventListener('resize', ()=>{ if(menu.classList.contains('mobah')) menu.classList.remove('mobah') })
+    addEventListener('resize', ()=> menu.classList.remove('mobah') )
   }
 }
