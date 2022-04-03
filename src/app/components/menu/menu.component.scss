@@ -75,16 +75,21 @@
   background-size: cover;
   background-position: center;
   cursor: pointer;
+  transition: 0.1s;
+}
+
+.menu .icon-menu-mobile:hover{
+  width: 45px;
+  height: 45px;
 }
 
 .menu-mobile{
   width: 0px;
   transition: 0.3s;
-  overflow: hidden;
   text-align: center;
   position: fixed;
   right: 0;
-  height: 100%;
+  height: calc(100% - 110px);
   background-image: linear-gradient(var(--main-background-color), var(--low-contrast-background-color));
 }
 
@@ -92,11 +97,12 @@
   display: flex;
   justify-content: space-evenly;
   flex-direction: column;
-  height: calc(100% - 110px);
+  height: 100%;
 }
 
 .menu-mobile ul li{
-  font-size: 16px;
+  min-width: 200px;
+  font-size: 20px;
   font-weight: 600;
   list-style-type: none;
 }
@@ -109,7 +115,7 @@
 
 .menu-mobile ul li a:hover{
   color: var(--color-main-white-hover);
-  font-size: 17px;
+  font-size: 22px;
 }
 
 .mobah{
@@ -123,7 +129,7 @@
     height: 100px;
   }
 
-  .menu-mobile ul{
+  .menu-mobile{
     height: calc(100% - 100px);
   }
 
@@ -155,7 +161,7 @@
     height: 90px;
   }
 
-  .menu-mobile ul{
+  .menu-mobile{
     height: calc(100% - 90px);
   }
 
@@ -187,7 +193,7 @@
     height: 80px;
   }
 
-  .menu-mobile ul{
+  .menu-mobile{
     height: calc(100% - 80px);
   }
 
@@ -221,7 +227,7 @@
     height: 70px;
   }
 
-  .menu-mobile ul{
+  .menu-mobile{
     height: calc(100% - 70px);
   }
 
@@ -255,4 +261,10 @@
     width: 35px;
     height: 35px;
   }
+
+
+.menu .icon-menu-mobile:hover{
+  width: 40px;
+  height: 40px;
+}
 }
