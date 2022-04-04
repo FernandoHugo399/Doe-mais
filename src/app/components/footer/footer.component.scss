@@ -1,0 +1,36 @@
+footer{
+  width: 100%;
+  height: 280px;
+  background-color: var(--main-background-color);
+}
+
+footer .flex-container{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+footer .flex-container .flex-item{
+  width: calc(100% / 3);
+}
+
+.logo a img{
+  width: 280px;
+  transition: 0.1s;
+}
+
+.logo a img:hover{
+  width: 285px;
+}
+
+.contact{
+  font-family: 'Poppins';
+  width: 100%;
+  color: var(--color-text-white);
+}
+
+.contact li{
+  list-style-type: none;
+}
