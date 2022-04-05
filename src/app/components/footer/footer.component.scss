@@ -25,12 +25,14 @@ footer .flex-container .flex-item{
   width: 285px;
 }
 
-.contact{
+.contact, .menu-footer{
   font-family: 'Poppins';
   width: 100%;
   color: var(--color-text-white);
 }
 
-.contact li{
+.contact li, .menu-footer li{
   list-style-type: none;
+  font-size: 18px;
+  font-weight: 600;
 }
