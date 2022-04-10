@@ -19,11 +19,6 @@ footer .flex-container{
 
 .logo a img{
   width: 280px;
-  transition: 0.1s;
-}
-
-.logo a img:hover{
-  width: 285px;
 }
 
 .contact li a, .menu-footer li a{
@@ -62,4 +57,51 @@ footer .flex-container{
 
 .menu-footer li {
   padding: 8px 0;
+}
+
+@media screen and (max-width: 1600px){
+  footer .center{
+    max-width: 1080px;
+  }
+
+  .contact li a, .menu-footer li a{
+    font-size: 16px;
+  }
+
+  .logo a img{
+    width: 260px;
+  }
+
+  .contact{
+    padding: 15px 60px;
+  }
+}
+
+
+@media screen and (max-width: 1280px){
+  footer .center{
+    max-width: 900px;
+  }
+
+  .contact li a, .menu-footer li a{
+    font-size: 14px;
+  }
+
+  .logo a img{
+    width: 240px;
+  }
+
+  .contact{
+    padding: 15px 40px;
+  }
+}
+
+@media screen and (max-width: 1024px){
+  footer .center{
+    max-width: 820px;
+  }
+
+  .logo a img{
+    width: 220px;
+  }
 }
