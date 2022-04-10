@@ -105,3 +105,42 @@ footer .flex-container{
     width: 220px;
   }
 }
+
+@media screen and (max-width: 900px){
+  footer{
+    padding: 30px 0;
+    height: auto;
+  }
+
+  footer .flex-container{
+    flex-direction: column;
+  }
+
+  footer .flex-container .flex-item{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .contact{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    border-left: 0;
+    border-right: 0;
+    border-top: 2px solid white;
+    border-bottom: 2px solid white;
+    padding: 10px 0;
+    margin: 10px 0 20px 0;
+  }
+
+  .menu-footer{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+  }
+}
