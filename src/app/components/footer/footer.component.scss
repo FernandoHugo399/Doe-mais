@@ -26,24 +26,26 @@ footer .flex-container{
   width: 285px;
 }
 
-.contact, .menu-footer{
+.contact li a, .menu-footer li a{
   font-family: 'Poppins';
   color: var(--color-text-white);
-}
-
-.contact li, .menu-footer li{
   list-style-type: none;
   font-size: 18px;
   font-weight: 600;
+  text-decoration: none;
+}
+
+.contact li a:hover, .menu-footer li a:hover{
+  color: var(--color-text-white-hover-hard);
 }
 
 .contact{
   border-left: 2px solid white;
   border-right: 2px solid white;
-  padding: 10px 100px;
+  padding: 15px 100px;
 }
 
-.contact li {
+.contact li a{
   padding: 5px 0;
   display: flex;
   align-items: center;
@@ -57,8 +59,6 @@ footer .flex-container{
   font-size: 24px;
   font-weight: 500;
 }
-
-
 
 .menu-footer li {
   padding: 8px 0;
