@@ -58,6 +58,7 @@
   background-color: var(--color-main-icons);
   padding: 10px 25px;
   border-radius: 20px;
+  transition: 0.1s;
 }
 
 .menu .menu-desktop ul li:last-of-type:hover{
@@ -109,13 +110,13 @@
 }
 
 .menu-mobile ul li a{
-  color: var(--color-main-white);
+  color: var(--color-text-white);
   text-decoration: none;
   transition: 0.1s;
 }
 
 .menu-mobile ul li a:hover{
-  color: var(--color-main-white-hover);
+  color: var(--color-text-white-hover);
   font-size: 22px;
 }
 

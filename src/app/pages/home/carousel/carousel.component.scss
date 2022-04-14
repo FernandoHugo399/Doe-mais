@@ -1,0 +1,146 @@
+
+.section-carrossel swiper{
+  max-height: 720px;
+  min-height: 360px;
+  height: 37vw;
+  width: 100%;
+}
+
+.background-slide{
+  width: 100%;
+  height: 100%;
+  background-position: center;
+  background-size: cover;
+  font-family: 'Poppins';
+  color: var(--color-text-white);
+  padding: 0 5%;
+}
+
+.background-slide .center{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.background-slide h2{
+  font-size: 36px;
+}
+
+.background-slide p{
+  padding: 10px 0 20px 0;
+  max-width: 600px;
+  font-size: 24px;
+  font-weight: 400;
+}
+
+.background-slide a button{
+  font-size: 20px;
+  font-weight: 600;
+  font-family: 'Poppins';
+  color: var(--color-text-white);
+  background-color: var(--color-main-icons);
+  padding: 12px 20px;
+  border-radius: 25px;
+  border: 0;
+  outline: 0;
+  transition: 0.1s;
+  cursor: pointer;
+}
+
+.background-slide a button:hover{
+  background-color: var(--color-main-icons-hover);
+}
+
+.swiper-slide .slide-1{
+  background-image: url('../../../../assets/images/Section-carousel-1.jpg');
+}
+
+.swiper-slide .slide-2{
+  background-image: url('../../../../assets/images/Section-carousel-2.jpg');
+}
+
+.swiper-slide .slide-3{
+  background-image: url('../../../../assets/images/Section-carousel-3.jpg');
+}
+
+
+@media (max-width: 1600px) {
+  .background-slide h2{
+    font-size: 32px;
+  }
+
+  .background-slide p{
+    font-size: 22px;
+    max-width: 560px;
+  }
+
+  .background-slide a button{
+    font-size: 18px;
+  }
+
+}
+
+@media (max-width: 1280px) {
+  .background-slide h2{
+    font-size: 28px;
+  }
+
+  .background-slide p{
+    font-size: 20px;
+    max-width: 500px;
+  }
+
+  .background-slide a button{
+    font-size: 16px;
+    padding: 10px 16px;
+    border-radius: 20px;
+  }
+}
+
+
+@media (max-width: 1024px) {
+  .background-slide h2{
+    font-size: 26px;
+  }
+
+  .background-slide p{
+    font-size: 18px;
+    max-width: 470px;
+  }
+}
+
+@media (max-width: 900px) {
+  .background-slide{
+    padding: 0;
+  }
+
+  .background-slide .center{
+    align-items: center;
+    text-align: center;
+  }
+
+  .background-slide h2{
+    font-size: 24px;
+  }
+
+  .background-slide p{
+    font-size: 16px;
+    max-width: 420px;
+  }
+
+  .background-slide a button{
+    font-size: 14px;
+    padding: 9px 14px;
+  }
+
+}
+
+@media (max-width: 380px) {
+  .background-slide h2{
+    font-size: 20px;
+  }
+
+  .background-slide p{
+    font-size: 14px;
+  }
+}
