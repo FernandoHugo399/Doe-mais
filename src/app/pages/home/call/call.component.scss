@@ -1,0 +1,26 @@
+.section-call{
+  width: 100%;
+  height: 550px;
+  background-color: var(--main-background-color);
+}
+
+.flex-container{
+  font-family: 'Open Sans';
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-text-white);
+  text-align: center;
+}
+
+.flex-container .title{
+  font-size: 32px;
+}
+
+.flex-container .subtitle{
+  margin-top: 30px;
+  font-size: 22px;
+  font-style: italic;
+  font-weight: 600;
+}
