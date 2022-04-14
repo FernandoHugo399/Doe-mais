@@ -591,3 +591,57 @@ button.swiper-pagination-bullet {
   -webkit-backface-visibility: hidden;
           backface-visibility: hidden;
 }
+
+@media screen and (max-width: 1600px) {
+  .swiper-button-prev,
+  .swiper-button-next {
+    width: 40px;
+    height: 60px;
+  }
+
+  .swiper-button-prev:after,
+  .swiper-button-next:after {
+    font-size: 25px;
+    font-weight: bolder;
+  }
+
+  .swiper-pagination-bullet {
+    width: 12px;
+    height: 12px;
+  }
+
+  :root {
+    --swiper-navigation-size: 60px;
+  }
+}
+
+@media screen and (max-width: 1280px) {
+  .swiper-button-prev,
+  .swiper-button-next {
+    width: 35px;
+    height: 50px;
+  }
+
+  .swiper-button-prev:after,
+  .swiper-button-next:after {
+    font-size: 20px;
+    font-weight: bolder;
+  }
+
+  .swiper-pagination-bullet {
+    width: 10px;
+    height: 10px;
+  }
+
+  :root {
+    --swiper-navigation-size: 60px;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .swiper-button-prev,
+  .swiper-button-next {
+    display: none;
+  }
+}
+
