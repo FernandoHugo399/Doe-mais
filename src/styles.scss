@@ -207,6 +207,11 @@ html, body{
   justify-content: center;
   color: var(--color-text-white);
   background-color: var(--color-main-icons);
+  transition: 0.1s;
+}
+.swiper-button-prev:hover,
+.swiper-button-next:hover{
+  background-color: var(--color-main-icons-hover);
 }
 .swiper-button-prev.swiper-button-disabled,
 .swiper-button-next.swiper-button-disabled {
