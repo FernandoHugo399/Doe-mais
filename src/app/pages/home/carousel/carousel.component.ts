@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 import { SwiperOptions } from 'swiper';
 
 @Component({
@@ -6,12 +6,7 @@ import { SwiperOptions } from 'swiper';
   templateUrl: './carousel.component.html',
   styleUrls: ['./carousel.component.scss']
 })
-export class CarouselComponent implements OnInit {
-
-  constructor() { }
-
-  ngOnInit(): void {
-  }
+export class CarouselComponent {
 
   config: SwiperOptions = {
     pagination: {
@@ -30,4 +25,5 @@ export class CarouselComponent implements OnInit {
       disableOnInteraction: false
     }
   };
+
 }
