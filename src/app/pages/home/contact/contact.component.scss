@@ -102,7 +102,7 @@
   font-family: 'Poppins';
 }
 
-.flex-container form input:focus, .flex-container form textarea:focus{
+.flex-container form input[type=text]:focus, .flex-container form textarea:focus{
   background-color: #E8F0Fb;
 }
 

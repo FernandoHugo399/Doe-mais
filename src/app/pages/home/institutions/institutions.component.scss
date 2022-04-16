@@ -100,8 +100,11 @@
 
   .swiper-slide a {
     display: block;
-    width: 160px;
-    height: 160px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 
   .swiper-slide a img {
@@ -135,12 +138,6 @@
     height: 175px;
   }
 
-  .swiper-slide a {
-    display: block;
-    width: 150px;
-    height: 150px;
-  }
-
   .swiper-slide a img {
     width: 150px;
     height: 150px;
@@ -167,12 +164,6 @@
 
   .swiper-slide{
     height: 155px;
-  }
-
-  .swiper-slide a {
-    display: block;
-    width: 135px;
-    height: 135px;
   }
 
   .swiper-slide a img {
