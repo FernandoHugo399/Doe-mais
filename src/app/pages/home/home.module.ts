@@ -6,19 +6,27 @@ import { NgxUsefulSwiperModule } from 'ngx-useful-swiper';
 import { CarouselComponent } from './carousel/carousel.component';
 import { CallComponent } from './call/call.component';
 import { InstitutionsComponent } from './institutions/institutions.component';
-
-
+import { ContactComponent } from './contact/contact.component';
+import { FormsModule } from '@angular/forms';
+import { MatFormFieldModule} from '@angular/material/form-field';
+import { MatInputModule } from '@angular/material/input';
+import { MatIconModule } from '@angular/material/icon';
 @NgModule({
   declarations: [
     HomeComponent,
     CarouselComponent,
     CallComponent,
-    InstitutionsComponent
+    InstitutionsComponent,
+    ContactComponent
   ],
   imports: [
     CommonModule,
     HomeRoutingModule,
-    NgxUsefulSwiperModule
+    NgxUsefulSwiperModule,
+    FormsModule,
+    MatFormFieldModule,
+    MatInputModule,
+    MatIconModule
   ]
 })
 export class HomeModule { }

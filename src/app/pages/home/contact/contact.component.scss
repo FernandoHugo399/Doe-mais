@@ -1,0 +1,318 @@
+.section-contact{
+  width: 100%;
+  border-top: 2px solid var(--main-background-color);
+  height: 680px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  font-family: 'Poppins';
+}
+
+.flex-container{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+.flex-container .informations{
+  color: var(--color-text-black);
+  font-family: 'Poppins';
+  width: 100%;
+  padding-right: 20px;
+  max-width: 720px;
+}
+
+.informations .introdution {
+  width: 100%;
+}
+
+.informations .introdution .title{
+  font-size: 30px;
+  font-weight: 500;
+  line-height: 32px;
+}
+
+.informations .introdution p{
+  padding-top: 15px;
+  font-size: 22px;
+  font-weight: 400;
+  text-align: justify;
+  line-height: 26px;
+  padding-bottom: 50px;
+}
+
+.contacts-attendance{
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.contacts, .attendance{
+  width: 50%;
+  font-size: 17px;
+}
+
+.contacts h3, .attendance h3{
+  font-weight: 500;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.contacts{
+  padding-right: 10px;
+}
+
+.contacts .social-medias li {
+  list-style-type: none;
+  padding-bottom: 6px;
+}
+
+.contacts .social-medias li a{
+  list-style: none;
+  display: flex;
+  justify-content: left;
+  color: var(--color-text-black);
+  text-decoration: none;
+}
+
+.contacts .social-medias li a p{
+  padding-left: 6px;
+}
+
+.flex-container .form-contact{
+  text-align: center;
+  width: 100%;
+  max-width: 400px;
+  border: 1px solid #a0a3bd6c;
+  border-radius: 25px;
+  background-color: var(--main-background-color-white);
+  box-shadow: 2px 2px 3px 2px #a0a3bd8a;
+}
+
+.flex-container .form-contact .title{
+  background-color: var(--main-background-color);
+  font-size: 22px;
+  font-weight: 600;
+  color: var(--color-text-white);
+  padding: 20px 0 30px 0;
+  border-radius: 20px 20px 0 0;
+}
+
+
+.flex-container .form-contact  form{
+  position: relative;
+  bottom: 20px;
+  background-color: var(--main-background-color-white);
+  border-radius: 25px;
+  font-weight: 600;
+  padding: 30px 4% 0 4%;
+  width: 100%;
+  height: 480px;
+}
+
+.flex-container form input {
+  font-size: 18px;
+  margin-bottom: 25px;
+  outline: 0;
+  width: 100%;
+  font-family: 'Poppins';
+  font-weight: 400;
+  color: #45464b;
+  padding: 12px 16px;
+  line-height: 1;
+  border: 1px solid #a0a3bd68;
+  font-family: 'Poppins';
+  font-weight: 600;
+  border-radius: 20px;
+  background-color: #EFF0F6;
+}
+
+.flex-container form textarea {
+  font-size: 18px;
+  margin-bottom: 25px;
+  outline: 0;
+  width: 100%;
+  font-family: 'Poppins';
+  font-weight: 400;
+  color: var(--color-text-black);
+  padding: 12px 16px;
+  line-height: 1;
+  border: 1px solid #a0a3bd68;
+  background-color: #EFF0F6;
+  font-family: 'Poppins';
+  font-weight: 600;
+  border-radius: 20px;
+  resize: none;
+  min-height: 100px;
+}
+
+.flex-container form input[type=submit] {
+  max-width: 220px;
+  padding: 20px 0;
+  border-radius: 30px;
+  background-color: var(--color-text-black);
+  color: var(--color-text-white);
+  cursor: pointer;
+  transition: 0.1s;
+}
+
+.flex-container form input[type=submit]:hover {
+  background-color: var(--main-background-color-hover);
+}
+
+.flex-container form input::-webkit-input-placeholder,.flex-container form textarea::-webkit-input-placeholder {
+  color: #8689a0;
+  font-family: 'Poppins';
+}
+
+.flex-container form input[type=text]:focus, .flex-container form textarea:focus{
+  background-color: #E8F0Fb;
+}
+
+.flex-container form input:-webkit-autofill, .flex-container form textarea:-webkit-autofill{
+  -webkit-box-shadow: 0 0 0 30px #EFF0F6 inset;
+  box-shadow: 0 0 0 30px #EFF0F6 inset;
+}
+
+@media screen and (max-width: 1600px){
+  .informations .introdution .title{
+    font-size: 27px;
+    line-height: 30px;
+  }
+
+  .informations .introdution p{
+    font-size: 21px;
+    line-height: 23px;
+  }
+
+  .contacts-attendance{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+
+  .contacts, .attendance{
+    width: 50%;
+    font-size: 17px;
+  }
+
+  .contacts h3, .attendance h3{
+    font-weight: 500;
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+
+}
+
+@media screen and (max-width: 1200px){
+  .section-contact{
+    height: auto;
+    padding: 80px 0;
+    text-align: center;
+  }
+
+  .flex-container{
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .flex-container .informations{
+    padding-right: 0;
+    max-width: 900px;
+  }
+
+  .flex-container .informations .introdution p {
+    text-align: center;
+  }
+
+  .contacts, .attendance{
+    padding-bottom: 50px;
+  }
+
+  .contacts .social-medias li a{
+    justify-content: center;
+  }
+
+  .contacts-attendance .attendance .text {
+    display: flex;
+    justify-content: center;
+   }
+
+  .contacts-attendance .attendance p {
+   max-width: 360px;
+  }
+
+  .flex-container .form-contact{
+    max-width: 450px;
+  }
+}
+
+@media screen and (max-width:720px){
+  .contacts-attendance{
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .contacts, .attendance{
+    width: 100%;
+  }
+}
+
+@media screen and (max-width:430px){
+  .contacts-attendance{
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .contacts, .attendance{
+    width: 100%;
+  }
+
+  .informations .introdution .title{
+    font-size: 24px;
+    line-height: 27px;
+  }
+
+  .informations .introdution p{
+    font-size: 18px;
+    line-height: 20px;
+  }
+
+  .contacts, .attendance{
+    font-size: 15px;
+  }
+
+  .contacts h3, .attendance h3{
+    font-size: 18px;
+  }
+
+  .flex-container .form-contact .title{
+    font-size: 19px;
+  }
+
+  .flex-container .form-contact  form{
+    height: 450px;
+  }
+
+
+  .flex-container form input {
+    font-size: 16px;
+    padding: 10px 14px;
+  }
+
+  .flex-container form textarea {
+    font-size: 16px;
+    padding: 10px 14px;
+  }
+
+  .flex-container form input[type=submit] {
+    max-width: 200px;
+    padding: 16px 0;
+  }
+
+}

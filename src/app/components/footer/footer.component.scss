@@ -38,6 +38,7 @@ footer .flex-container{
   border-left: 2px solid white;
   border-right: 2px solid white;
   padding: 15px 100px;
+  list-style-type: none;
 }
 
 .contact li a{
@@ -50,13 +51,9 @@ footer .flex-container{
   padding-left: 6px;
 }
 
-.contact li span{
-  font-size: 24px;
-  font-weight: 500;
-}
-
 .menu-footer li {
   padding: 8px 0;
+  list-style-type: none;
 }
 
 @media screen and (max-width: 1600px){
