@@ -54,7 +54,7 @@
   width: 100%;
   font-family: 'Poppins';
   font-weight: 400;
-  color: var(--color-text-black);
+  color: #45464b;
   padding: 12px 16px;
   line-height: 1;
   border: 1px solid #a0a3bd68;
@@ -62,11 +62,6 @@
   font-weight: 600;
   border-radius: 20px;
   background-color: #EFF0F6;
-}
-
-.flex-container form input::-webkit-input-placeholder {
-  color: #8689a0;
-  font-family: 'Poppins';
 }
 
 .flex-container form textarea {
@@ -88,15 +83,31 @@
   min-height: 100px;
 }
 
-.flex-container form textarea::-webkit-input-placeholder {
-  color: #8689a0;
-  font-family: 'Poppins';
-}
-
 .flex-container form input[type=submit] {
   max-width: 220px;
   padding: 20px 0;
   border-radius: 30px;
   background-color: var(--color-text-black);
   color: var(--color-text-white);
+  cursor: pointer;
+  transition: 0.1s;
 }
+
+.flex-container form input[type=submit]:hover {
+  background-color: var(--main-background-color-hover);
+}
+
+.flex-container form input::-webkit-input-placeholder,.flex-container form textarea::-webkit-input-placeholder {
+  color: #8689a0;
+  font-family: 'Poppins';
+}
+
+.flex-container form input:focus, .flex-container form textarea:focus{
+  background-color: #E8F0Fb;
+}
+
+.flex-container form input:-webkit-autofill, .flex-container form textarea:-webkit-autofill{
+  -webkit-box-shadow: 0 0 0 30px #EFF0F6 inset;
+  box-shadow: 0 0 0 30px #EFF0F6 inset;
+}
+
