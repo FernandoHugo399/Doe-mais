@@ -6,6 +6,7 @@ import { NgxUsefulSwiperModule } from 'ngx-useful-swiper';
 import { CarouselComponent } from './carousel/carousel.component';
 import { CallComponent } from './call/call.component';
 import { InstitutionsComponent } from './institutions/institutions.component';
+import { ContactComponent } from './contact/contact.component';
 
 
 @NgModule({
@@ -13,7 +14,8 @@ import { InstitutionsComponent } from './institutions/institutions.component';
     HomeComponent,
     CarouselComponent,
     CallComponent,
-    InstitutionsComponent
+    InstitutionsComponent,
+    ContactComponent
   ],
   imports: [
     CommonModule,
