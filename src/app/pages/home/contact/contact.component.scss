@@ -6,7 +6,6 @@
   background-size: cover;
   background-position: center;
   font-family: 'Poppins';
-  text-align: center;
 }
 
 .flex-container{
@@ -17,7 +16,74 @@
   align-items: center;
 }
 
+
+.flex-container .informations{
+  color: var(--color-text-black);
+  font-family: 'Poppins';
+  width: 100%;
+  padding-right: 20px;
+  max-width: 720px;
+}
+
+.informations .introdution {
+  width: 100%;
+}
+
+.informations .introdution .title{
+  font-size: 30px;
+  font-weight: 500;
+  line-height: 32px;
+}
+
+.informations .introdution p{
+  padding-top: 15px;
+  font-size: 22px;
+  font-weight: 400;
+  text-align: justify;
+  line-height: 26px;
+  padding-bottom: 50px;
+}
+
+.contacts-attendance{
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.contacts, .attendance{
+  width: 50%;
+  font-size: 17px;
+}
+
+.contacts h3, .attendance h3{
+  font-weight: 500;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.contacts{
+  padding-right: 10px;
+}
+
+.contacts .social-medias li {
+  list-style-type: none;
+  padding-bottom: 6px;
+}
+
+.contacts .social-medias li a{
+  list-style: none;
+  display: flex;
+  justify-content: left;
+  color: var(--color-text-black);
+  text-decoration: none;
+}
+
+.contacts .social-medias li a p{
+  padding-left: 6px;
+}
+
 .flex-container .form-contact{
+  text-align: center;
   width: 100%;
   max-width: 400px;
   border: 1px solid #a0a3bd6c;
