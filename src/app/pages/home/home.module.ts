@@ -7,8 +7,9 @@ import { CarouselComponent } from './carousel/carousel.component';
 import { CallComponent } from './call/call.component';
 import { InstitutionsComponent } from './institutions/institutions.component';
 import { ContactComponent } from './contact/contact.component';
-
-
+import { FormsModule } from '@angular/forms';
+import { MatFormFieldModule} from '@angular/material/form-field';
+import { MatInputModule } from '@angular/material/input';
 @NgModule({
   declarations: [
     HomeComponent,
@@ -20,7 +21,10 @@ import { ContactComponent } from './contact/contact.component';
   imports: [
     CommonModule,
     HomeRoutingModule,
-    NgxUsefulSwiperModule
+    NgxUsefulSwiperModule,
+    FormsModule,
+    MatFormFieldModule,
+    MatInputModule
   ]
 })
 export class HomeModule { }
