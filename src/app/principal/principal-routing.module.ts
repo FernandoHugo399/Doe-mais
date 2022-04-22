@@ -12,6 +12,11 @@ const routes: Routes = [
    path: 'quem-somos',
    component: PrincipalComponent,
    loadChildren: () => import('../pages/quem-somos/quem-somos.module').then(m => m.QuemSomosModule)
+  },
+  {
+   path: 'contate-nos',
+   component: PrincipalComponent,
+   loadChildren: () => import('../pages/contate-nos/contate-nos.module').then(m => m.ContateNosModule)
   }
 ];
 
