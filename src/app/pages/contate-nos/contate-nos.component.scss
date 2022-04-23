@@ -25,73 +25,181 @@
   font-weight: 400;
 }
 
-
-
-
-
-
-
-
-@media (max-width: 1600px) {
-  .banner h2{
-    font-size: 36px;
-  }
-
-  .banner p{
-    font-size: 24px;
-  }
-
-  .presentation .item h2{
-    font-size: 32px;
-  }
-
-  .presentation .item p{
-    font-size: 22px;
-  }
-
-  .presentation .item ul li{
-    font-size: 22px;
-  }
+.contact{
+  font-family: 'Poppins';
+  width: 100%;
+  padding: 80px 0;
 }
 
-@media (max-width: 1280px) {
-  .banner h2{
-    font-size: 30px;
-  }
+.contact .title{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
 
-  .banner p{
-    font-size: 22px;
-  }
+.contact .title p{
+  width: 100%;
+  max-width: 1100px;
+  font-size: 40px;
+  text-align: center;
+  line-height: 40px;
+  padding-bottom: 30px;
+  color: var(--color-main-icons-hover);
+}
+
+.contact .subtitle {
+  font-size: 28px;
+  text-align: justify;
+  color: var(--color-text-black);
+  padding-bottom: 20px;
+}
+
+.contact .subtitle strong {
+  font-weight: 500;
+  color: var(--color-main-icons-hover);
+}
+
+.flex-container{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.flex-container .item{
+  text-align: justify;
+  padding: 20px 20px 20px 0;
+}
+
+.item .text{
+  font-size: 26px;
+  font-weight: 300;
+  max-width: 700px;
+}
+
+.item .text strong{
+  color: var(--color-main-icons-hover);
+  font-weight: 500;
+}
+
+.item .info-contact .title-contact{
+  padding-top: 20px;
+  font-size: 38px;
+  max-width: 850px;
+  font-weight: 500;
+  text-align: left;
+  line-height: 45px;
+  color: var(--color-main-icons-hover);
+}
+
+.item .social-medias{
+  padding-top: 20px;
+}
+
+.social-medias li{
+  list-style-type: none;
+  padding: 5px 0;
+  display: flex;
+  align-items: center;
+  font-size: 22px;
+  text-decoration: none;
+  color: var(--color-text-black);
+}
+
+.social-medias li p{
+  padding-left: 6px;
+}
+
+.flex-container .form-contact{
+  text-align: center;
+  width: 100%;
+  max-width: 400px;
+  border: 1px solid #a0a3bd6c;
+  border-radius: 25px;
+  background-color: var(--main-background-color-white);
+  box-shadow: 2px 2px 3px 2px #a0a3bd8a;
+}
+
+.flex-container .form-contact .title{
+  background-color: var(--main-background-color);
+  font-size: 22px;
+  font-weight: 600;
+  color: var(--color-text-white);
+  padding: 20px 0 30px 0;
+  border-radius: 20px 20px 0 0;
 }
 
 
-@media (max-width: 1024px) {
-  .banner h2{
-    font-size: 28px;
-  }
-
-  .banner p{
-    font-size: 20px;
-  }
+.flex-container .form-contact  form{
+  position: relative;
+  bottom: 20px;
+  background-color: var(--main-background-color-white);
+  border-radius: 25px;
+  font-weight: 600;
+  padding: 30px 4% 0 4%;
+  width: 100%;
+  height: 480px;
 }
 
-@media (max-width: 900px) {
-  .banner{
-    padding: 0;
-  }
-
-  .banner .center{
-    align-items: center;
-    text-align: center;
-  }
+.flex-container form input {
+  font-size: 18px;
+  margin-bottom: 25px;
+  outline: 0;
+  width: 100%;
+  font-family: 'Poppins';
+  font-weight: 400;
+  color: #45464b;
+  padding: 12px 16px;
+  line-height: 1;
+  border: 1px solid #a0a3bd68;
+  font-family: 'Poppins';
+  font-weight: 600;
+  border-radius: 20px;
+  background-color: #EFF0F6;
 }
 
-@media (max-width: 380px) {
-  .banner h2{
-    font-size: 24px;
-  }
+.flex-container form textarea {
+  font-size: 18px;
+  margin-bottom: 25px;
+  outline: 0;
+  width: 100%;
+  font-family: 'Poppins';
+  font-weight: 400;
+  color: var(--color-text-black);
+  padding: 12px 16px;
+  line-height: 1;
+  border: 1px solid #a0a3bd68;
+  background-color: #EFF0F6;
+  font-family: 'Poppins';
+  font-weight: 600;
+  border-radius: 20px;
+  resize: none;
+  min-height: 100px;
+}
 
-  .banner p{
-    font-size: 16px;
-  }
+.flex-container form input[type=submit] {
+  max-width: 220px;
+  padding: 20px 0;
+  border-radius: 30px;
+  background-color: var(--color-text-black);
+  color: var(--color-text-white);
+  cursor: pointer;
+  transition: 0.1s;
+}
+
+.flex-container form input[type=submit]:hover {
+  background-color: var(--main-background-color-hover);
+}
+
+.flex-container form input::-webkit-input-placeholder,.flex-container form textarea::-webkit-input-placeholder {
+  color: #8689a0;
+  font-family: 'Poppins';
+}
+
+.flex-container form input[type=text]:focus, .flex-container form textarea:focus{
+  background-color: #E8F0Fb;
+}
+
+.flex-container form input:-webkit-autofill, .flex-container form textarea:-webkit-autofill{
+  -webkit-box-shadow: 0 0 0 30px #EFF0F6 inset;
+  box-shadow: 0 0 0 30px #EFF0F6 inset;
 }

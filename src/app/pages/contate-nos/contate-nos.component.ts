@@ -1,15 +1,8 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-contate-nos',
   templateUrl: './contate-nos.component.html',
-  styleUrls: ['./contate-nos.component.scss']
+  styleUrls: ['./contate-nos.component.scss', './contate-nosMD.component.scss']
 })
-export class ContateNosComponent implements OnInit {
-
-  constructor() { }
-
-  ngOnInit(): void {
-  }
-
-}
+export class ContateNosComponent{ }
