@@ -17,6 +17,11 @@ const routes: Routes = [
    path: 'contate-nos',
    component: PrincipalComponent,
    loadChildren: () => import('../pages/contate-nos/contate-nos.module').then(m => m.ContateNosModule)
+  },
+  {
+   path: 'como-doar',
+   component: PrincipalComponent,
+   loadChildren: () => import('../pages/como-doar/como-doar.module').then(m => m.ComoDoarModule)
   }
 ];
 
