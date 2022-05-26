@@ -27,6 +27,9 @@ html, body{
 }
 
 
+
+
+
 /* CENTRALIZAR OS ELEMENTOS */
 .center{
   padding: 0 4%;
@@ -36,6 +39,23 @@ html, body{
   max-width: 1517px;
 }
 
+@media screen and (max-width: 1600px) {
+  .center{
+    max-width: 1280px;
+  }
+}
+
+@media screen and (max-width: 1280px) {
+  .center{
+    max-width: 1200px;
+  }
+}
+
+
+
+
+
+/* BANNER COM AS IMAGENS */
 .banner{
   max-height: 720px;
   min-height: 450px;
@@ -47,10 +67,6 @@ html, body{
   color: var(--color-text-white);
 }
 
-
-
-
-/* BANNER COM AS IMAGENS */
 .banner .center{
   display: flex;
   flex-direction: column;
@@ -68,10 +84,6 @@ html, body{
 }
 
 @media screen and (max-width: 1600px) {
-  .center{
-    max-width: 1280px;
-  }
-
   .banner h2{
     font-size: 36px;
   }
@@ -82,10 +94,6 @@ html, body{
 }
 
 @media screen and (max-width: 1280px) {
-  .center{
-    max-width: 1200px;
-  }
-
   .banner h2{
     font-size: 30px;
   }
@@ -128,15 +136,12 @@ html, body{
 
 
 
+
+
 /* BLUR QUANDO O MENU É ATIVADO */
 .blur{
   filter: blur(1rem) brightness(50%);
 }
-
-
-
-
-
 
 
 
