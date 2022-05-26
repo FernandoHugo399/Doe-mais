@@ -26,6 +26,8 @@ html, body{
   --form-font: 'Open Sans', sans-serif;
 }
 
+
+/* CENTRALIZAR OS ELEMENTOS */
 .center{
   padding: 0 4%;
   width: 100%;
@@ -45,6 +47,10 @@ html, body{
   color: var(--color-text-white);
 }
 
+
+
+
+/* BANNER COM AS IMAGENS */
 .banner .center{
   display: flex;
   flex-direction: column;
@@ -122,6 +128,10 @@ html, body{
 
 
 
+/* BLUR QUANDO O MENU É ATIVADO */
+.blur{
+  filter: blur(1rem) brightness(50%);
+}
 
 
 
@@ -132,8 +142,7 @@ html, body{
 
 
 
-
-
+/* CARROSSEL */
 
  @font-face {
   font-family: 'swiper-icons';
