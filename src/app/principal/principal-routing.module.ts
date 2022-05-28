@@ -33,7 +33,11 @@ const routes: Routes = [
     component: PrincipalComponent,
     loadChildren: () => import('../pages/saiba-mais-individual/saiba-mais-individual.module').then(m => m.SaibaMaisIndividualModule)
   },
-  { path: 'doar-agora/:id', loadChildren: () => import('../pages/doar-agora-individual/doar-agora-individual.module').then(m => m.DoarAgoraIndividualModule) }
+  {
+    path: 'doar-agora/:id',
+    component: PrincipalComponent,
+    loadChildren: () => import('../pages/doar-agora-individual/doar-agora-individual.module').then(m => m.DoarAgoraIndividualModule)
+  }
 ];
 
 @NgModule({
