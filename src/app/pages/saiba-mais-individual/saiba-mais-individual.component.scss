@@ -1,3 +1,9 @@
+.single-informations{
+  padding: 60px 0;
+  background-position: center;
+  background-size: cover;
+}
+
 .flex-container{
   display: flex;
   flex-direction: column;
@@ -5,16 +11,7 @@
   justify-content: center;
 }
 
-.single-informations{
-  padding: 50px 0;
-}
-
-.single-informations img{
-  width: 100%;
-  max-width: 380px;
-}
-
-.single-informations h2{
+.flex-container h2{
   color: var(--color-text-purple);
   font-weight: 500;
   font-size: 34px;
@@ -24,12 +21,19 @@
   padding: 30px 0 10px 0;
 }
 
-.single-informations p{
+.flex-container p{
   padding-bottom: 20px;
+  font-weight: 300;
   max-width: 900px;
   text-align: center;
   font-size: 18px;
 }
+
+.single-informations img{
+  width: 100%;
+  max-width: 380px;
+}
+
 
 .single-informations a{
   padding: 8px 35px;
@@ -46,20 +50,55 @@
   background-color: var(--color-main-icons-hover);
 }
 
+.informations{
+  background-position: center;
+  background-size: cover;
+  padding-bottom: 50px;
+}
+
+.informations p{
+  text-align: justify;
+  max-width: none;
+}
+
+.informations .contact{
+  flex-direction: row;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 550px;
+  color: var(--color-text-purple);
+  font-weight: 300;
+}
+
+.informations .contact img{
+  width: 200px;
+}
+
+.informations .contact h3{
+  font-weight: 300;
+  font-size: 20px;
+}
+
+.informations .contact ul{
+  padding-top: 5px;
+  list-style-type: none;
+}
 
 
 @media (max-width: 1280px){
-  .single-informations img{
-    max-width: 330px;
-  }
-
-  .single-informations h2{
+  .flex-container h2{
     line-height: 35px;
     font-size: 30px;
   }
 
-  .single-informations p{
+  .flex-container p{
     font-size: 16px;
+  }
+
+  .single-informations img{
+    max-width: 330px;
   }
 
   .single-informations a{
@@ -69,21 +108,34 @@
 }
 
 @media (max-width: 500px){
-  .single-informations img{
-    max-width: 250px;
-  }
-
-  .single-informations h2{
+  .flex-container h2{
     line-height: 30px;
     font-size: 24px;
   }
 
-  .single-informations p{
+  .flex-container p{
     font-size: 14px;
+  }
+
+  .single-informations img{
+    max-width: 250px;
   }
 
   .single-informations a{
     padding: 8px 25px;
     font-size: 14px;
+  }
+
+  .informations .contact{
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .informations .contact img{
+    padding: 30px 0;
+  }
+
+  .informations .contact ul{
+    font-size: 15px;
   }
 }
