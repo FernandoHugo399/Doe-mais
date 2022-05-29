@@ -7,8 +7,6 @@ import { Injectable } from '@angular/core';
 export class MenuService implements IMenuService {
 
   showHideMenu(menu: HTMLDivElement): void {
-    document.querySelector('main')!.classList.toggle('blur')
-    document.querySelector('footer')!.classList.toggle('blur')
     menu.classList.toggle('mobah')
   }
 
