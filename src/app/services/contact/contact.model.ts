@@ -5,9 +5,14 @@ export interface IServiceContact {
   sendMessage(message: ISendMessageDTO): Observable<IRequest>
 }
 
+export interface IServiceContactMethods {
+  sendMessage(): void
+}
+
+
 export interface ISendMessageDTO{
   nome: string
   email: string
-  telefone: number
+  telefone: string
   mensagem: string
 }

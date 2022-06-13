@@ -4,8 +4,9 @@ export default class GlobalVars {
   public static baseURL: string = 'http://localhost:3333'
 
   public static verifyRequest(res: IRequest){
-    if(!res.error) GlobalVars.messageSuccess = res.message
-    else GlobalVars.messageError = res.error
+    console.log(res)
+    if(!res.error) this.messageSuccess = res.message
+    else this.messageError = res.error
   }
 }
 

@@ -33,7 +33,7 @@
 
       <div class="form-contact">
         <div class="title">Contate-nos</div>
-        <form>
+        <form  (submit)="$event.preventDefault()">
           <div class="input-field">
               <input type="text" placeholder="Nome" name="name">
           </div> <!-- input-field -->
@@ -50,7 +50,7 @@
               <textarea name="mensagem" placeholder="Deixe sua mensagem"></textarea>
           </div> <!-- input-field -->
 
-          <input type="submit" value="Entrar em contato">
+          <input type="submit" (click)="sendMessage()" value="Entrar em contato">
       </form>
       </div> <!-- form-contact -->
     </div> <!-- flex-container -->
