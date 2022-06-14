@@ -9,12 +9,14 @@ import { Component, ViewChild } from '@angular/core';
 })
 export class ContateNosComponent implements IServiceContactMethods{
   @ViewChild('inputSubmit') inputSubmit!: { nativeElement: HTMLInputElement; };
+
   public Message: ISendMessageDTO = {
     nome: '',
     email: '',
     telefone: '',
     mensagem: ''
   }
+
   constructor(private contactService: ContactService){ }
   public sendMessage(): void {
     this.contactService.sendMessage(this.Message, this.inputSubmit).subscribe()

@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { catchError, empty, map, Observable, tap } from 'rxjs';
+import { catchError, empty, Observable, tap } from 'rxjs';
 import { ISendMessageDTO, IServiceContact } from './contact.model';
 import GlobalVars, { IRequest } from 'src/app/global/global.model';
 import { HttpClient } from '@angular/common/http';
