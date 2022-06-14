@@ -24,11 +24,11 @@ import { NetworkInterceptor } from './components/loading/network.interceptor';
     MatProgressSpinnerModule,
     HttpClientModule
   ],
-  /* providers: [{
+  providers: [{
     provide: HTTP_INTERCEPTORS,
     useClass: NetworkInterceptor,
     multi: true
-  }], */
+  }],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

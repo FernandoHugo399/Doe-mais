@@ -143,6 +143,14 @@ html, body{
   filter: blur(1rem) brightness(50%);
 }
 
+.input-disabled{
+  background-color: gray !important;
+}
+
+.input-disabled:disabled{
+  color: black !important;
+}
+
 
 
 

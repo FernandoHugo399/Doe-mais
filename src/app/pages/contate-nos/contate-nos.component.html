@@ -35,22 +35,22 @@
         <div class="title">Contate-nos</div>
         <form  (submit)="$event.preventDefault()">
           <div class="input-field">
-              <input type="text" placeholder="Nome" name="name">
+              <input type="text" placeholder="Nome" name="name" [(ngModel)]="Message.nome">
           </div> <!-- input-field -->
 
           <div class="input-field">
-              <input type="text" placeholder="Email" name="email">
+              <input type="text" placeholder="Email" name="email" [(ngModel)]="Message.email">
           </div> <!-- input-field -->
 
           <div class="input-field">
-              <input type="text" placeholder="Telefone" name="number">
+              <input type="text" placeholder="Telefone" name="number" [(ngModel)]="Message.telefone">
           </div> <!-- input-field -->
 
           <div class="input-field">
-              <textarea name="mensagem" placeholder="Deixe sua mensagem"></textarea>
+              <textarea name="mensagem" placeholder="Deixe sua mensagem" [(ngModel)]="Message.mensagem"></textarea>
           </div> <!-- input-field -->
 
-          <input type="submit" (click)="sendMessage()" value="Entrar em contato">
+          <input type="submit" (click)="sendMessage()" value="Entrar em contato" #inputSubmit>
       </form>
       </div> <!-- form-contact -->
     </div> <!-- flex-container -->

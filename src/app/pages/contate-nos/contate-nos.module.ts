@@ -4,7 +4,7 @@ import { CommonModule } from '@angular/common';
 
 import { ContateNosRoutingModule } from './contate-nos-routing.module';
 import { ContateNosComponent } from './contate-nos.component';
-
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -13,7 +13,8 @@ import { ContateNosComponent } from './contate-nos.component';
   imports: [
     CommonModule,
     ContateNosRoutingModule,
-    MatIconModule
+    MatIconModule,
+    FormsModule
   ]
 })
 export class ContateNosModule { }

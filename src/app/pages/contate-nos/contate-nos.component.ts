@@ -1,6 +1,6 @@
 import { IServiceContactMethods, ISendMessageDTO } from './../../services/contact/contact.model';
 import { ContactService } from './../../services/contact/contact.service';
-import { Component } from '@angular/core';
+import { Component, ViewChild } from '@angular/core';
 
 @Component({
   selector: 'app-contate-nos',
@@ -8,16 +8,17 @@ import { Component } from '@angular/core';
   styleUrls: ['./contate-nos.component.scss', './contate-nosMD.component.scss']
 })
 export class ContateNosComponent implements IServiceContactMethods{
-  private message: ISendMessageDTO = {
-    nome: 'teste2',
-    email: 'testjest@email.com',
-    telefone: '55 81 90000-0000',
-    mensagem: 'Fazendo teste com jest'
+  @ViewChild('inputSubmit') inputSubmit!: { nativeElement: HTMLInputElement; };
+  public Message: ISendMessageDTO = {
+    nome: '',
+    email: '',
+    telefone: '',
+    mensagem: ''
   }
   constructor(private contactService: ContactService){ }
 
   public sendMessage(): void {
-      this.contactService.sendMessage(this.message).subscribe()
+      this.contactService.sendMessage(this.Message, this.inputSubmit).subscribe()
   }
 
 }
