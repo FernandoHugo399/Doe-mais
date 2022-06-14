@@ -1,3 +1,5 @@
+
+
 .tutorial{
   width: 100%;
   padding: 100px 0;
@@ -7,6 +9,7 @@
 }
 
 .tutorial h2{
+  font-family: var(--main-font);
   font-size: 40px;
   color: var(--color-text-purple);
   font-weight: 500;
@@ -29,14 +32,6 @@
 
 
 @media (max-width: 1600px) {
-  .banner h2{
-    font-size: 36px;
-  }
-
-  .banner p{
-    font-size: 24px;
-  }
-
   .tutorial h2{
     font-size: 36px;
   }

@@ -22,7 +22,8 @@
 }
 
 .background-slide h2{
-  font-size: 36px;
+  font-size: 42px;
+  font-family: var(--main-font);
 }
 
 .background-slide p{
@@ -30,6 +31,7 @@
   max-width: 600px;
   font-size: 24px;
   font-weight: 400;
+  line-height: 24px;
 }
 
 .background-slide a button{
@@ -52,11 +54,12 @@
 
 @media (max-width: 1600px) {
   .background-slide h2{
-    font-size: 32px;
+    font-size: 38px;
   }
 
   .background-slide p{
     font-size: 22px;
+    line-height: 22px;
     max-width: 560px;
   }
 
@@ -68,11 +71,12 @@
 
 @media (max-width: 1280px) {
   .background-slide h2{
-    font-size: 28px;
+    font-size: 34px;
   }
 
   .background-slide p{
     font-size: 20px;
+    line-height: 20px;
     max-width: 500px;
   }
 
@@ -86,7 +90,7 @@
 
 @media (max-width: 1024px) {
   .background-slide h2{
-    font-size: 26px;
+    font-size: 30px;
   }
 
   .background-slide p{
@@ -106,11 +110,12 @@
   }
 
   .background-slide h2{
-    font-size: 24px;
+    font-size: 26px;
   }
 
   .background-slide p{
     font-size: 16px;
+    line-height: 16px;
     max-width: 420px;
   }
 
@@ -123,10 +128,6 @@
 
 @media (max-width: 380px) {
   .background-slide h2{
-    font-size: 20px;
-  }
-
-  .background-slide p{
-    font-size: 14px;
+    font-size: 24px;
   }
 }

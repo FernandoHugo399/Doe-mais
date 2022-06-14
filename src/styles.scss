@@ -22,7 +22,7 @@ html, body{
   --color-main-icons: #9966FC;
   --color-text-purple: #6E3AB1;
   --color-main-icons-hover: #6E3AB1;
-  --main-font: 'Poppins', sans-serif;
+  --main-font: 'Poppins';
   --form-font: 'Open Sans', sans-serif;
 }
 
@@ -74,18 +74,19 @@ html, body{
 }
 
 .banner h2{
-  font-size: 40px;
+  font-size: 44px;
+  font-weight: bold;
+  padding-bottom: 10px;
 }
 
 .banner p{
   font-size: 28px;
-  padding-top: 10px;
   font-weight: 400;
 }
 
 @media screen and (max-width: 1600px) {
   .banner h2{
-    font-size: 36px;
+    font-size: 40px;
   }
 
   .banner p{
@@ -95,7 +96,7 @@ html, body{
 
 @media screen and (max-width: 1280px) {
   .banner h2{
-    font-size: 30px;
+    font-size: 34px;
   }
 
   .banner p{
@@ -105,7 +106,7 @@ html, body{
 
 @media (max-width: 1024px) {
   .banner h2{
-    font-size: 26px;
+    font-size: 30px;
   }
 
   .banner p{
