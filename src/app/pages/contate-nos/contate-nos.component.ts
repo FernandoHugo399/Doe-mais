@@ -9,7 +9,7 @@ import { Component } from '@angular/core';
 })
 export class ContateNosComponent implements IServiceContactMethods{
   private message: ISendMessageDTO = {
-    nome: 'teste',
+    nome: 'teste2',
     email: 'testjest@email.com',
     telefone: '55 81 90000-0000',
     mensagem: 'Fazendo teste com jest'

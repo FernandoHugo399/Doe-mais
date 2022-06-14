@@ -12,7 +12,12 @@ export class ContactService implements IServiceContact {
   constructor(private http: HttpClient) { }
 
   public sendMessage(message: ISendMessageDTO): Observable<IRequest> {
-    return this.http.post<IRequest>(`${this.baseURL}/save-message`, {message})
+    return this.http.post<IRequest>(`${this.baseURL}/save-message`, {
+      nome: message.nome,
+      email: message.email,
+      telefone: message.telefone,
+      mensagem: message.mensagem
+    })
     .pipe(tap((res)=>{
       GlobalVars.verifyRequest(res)
     }))
