@@ -16,9 +16,8 @@ export class ContateNosComponent implements IServiceContactMethods{
     mensagem: ''
   }
   constructor(private contactService: ContactService){ }
-
   public sendMessage(): void {
-      this.contactService.sendMessage(this.Message, this.inputSubmit).subscribe()
+    this.contactService.sendMessage(this.Message, this.inputSubmit).subscribe()
   }
 
 }
