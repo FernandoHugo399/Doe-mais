@@ -1,3 +1,5 @@
+import { ContactService } from 'src/app/services/contact/contact.service';
+import { HttpClientModule } from '@angular/common/http';
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { ContateNosComponent } from './contate-nos.component';
@@ -8,7 +10,9 @@ describe('ContateNosComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ ContateNosComponent ]
+      declarations: [ ContateNosComponent ],
+      imports: [HttpClientModule],
+      providers: [ContactService]
     })
     .compileComponents();
   });
