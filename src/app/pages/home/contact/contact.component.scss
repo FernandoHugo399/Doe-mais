@@ -76,10 +76,12 @@
   justify-content: left;
   color: var(--color-text-black);
   text-decoration: none;
+  align-items: center;
 }
 
 .contacts .social-medias li p{
   padding-left: 6px;
+  margin: 6px 0;
 }
 
 .flex-container .form-contact{
