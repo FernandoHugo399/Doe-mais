@@ -1,6 +1,7 @@
 import { IServiceContactMethods, ISendMessageDTO } from './../../services/contact/contact.model';
 import { ContactService } from './../../services/contact/contact.service';
 import { Component, ViewChild } from '@angular/core';
+import GlobalVars from 'src/app/global/global.model';
 
 @Component({
   selector: 'app-contate-nos',
@@ -9,6 +10,8 @@ import { Component, ViewChild } from '@angular/core';
 })
 export class ContateNosComponent implements IServiceContactMethods{
   @ViewChild('inputSubmit') inputSubmit!: { nativeElement: HTMLInputElement; };
+  public messageError!: string
+  public messageSuccess!: string
 
   public Message: ISendMessageDTO = {
     nome: '',
@@ -19,7 +22,10 @@ export class ContateNosComponent implements IServiceContactMethods{
 
   constructor(private contactService: ContactService){ }
   public sendMessage(): void {
-    this.contactService.sendMessage(this.Message, this.inputSubmit).subscribe()
+    this.contactService.sendMessage(this.Message, this.inputSubmit).subscribe(()=>{
+      this.messageSuccess = GlobalVars.messageSuccess
+      this.messageError = GlobalVars.messageError
+    })
   }
 
 }
