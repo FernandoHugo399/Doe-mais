@@ -5,8 +5,14 @@ export default class GlobalVars {
   public static baseURL: string = 'https://api-doe-mais.herokuapp.com'
 
   public static verifyRequest(res: IRequest){
-    if(!res.error) this.messageSuccess = res.message
-    else this.messageError = res.error
+    if(!res.error) {
+      this.messageSuccess = res.message
+      this.messageError = ''
+
+    }else {
+      this.messageError = res.error
+      this.messageSuccess = ''
+    }
   }
 }
 

@@ -30,16 +30,19 @@
         </div> <!-- info-contact -->
 
       </div> <!-- item -->
-      <p *ngIf="messageError">{{messageError}}</p>
-      <div class="form-contact">
-        <div class="title">Contate-nos</div>
-        <form>
-          <div class="input-field">
+
+      <div class="flex-form">
+        <p *ngIf="messageError" class="messageError">{{messageError}}</p>
+        <p *ngIf="messageSuccess" class="messageSuccess">{{messageSuccess}}</p>
+        <div class="form-contact">
+          <div class="title">Contate-nos</div>
+          <form>
+            <div class="input-field">
               <input type="text" placeholder="Nome" name="name" [(ngModel)]="Message.nome">
           </div> <!-- input-field -->
 
           <div class="input-field">
-              <input type="text" placeholder="Email" name="email" [(ngModel)]="Message.email">
+            <input type="text" placeholder="Email" name="email" [(ngModel)]="Message.email">
           </div> <!-- input-field -->
 
           <div class="input-field">
@@ -47,12 +50,13 @@
           </div> <!-- input-field -->
 
           <div class="input-field">
-              <textarea name="mensagem" placeholder="Deixe sua mensagem" [(ngModel)]="Message.mensagem"></textarea>
+            <textarea name="mensagem" placeholder="Deixe sua mensagem" [(ngModel)]="Message.mensagem"></textarea>
           </div> <!-- input-field -->
 
           <input type="submit" (click)="sendMessage()" value="Entrar em contato" #inputSubmit>
-      </form>
+        </form>
       </div> <!-- form-contact -->
+    </div> <!-- flex form -->
     </div> <!-- flex-container -->
 
   </div> <!-- center -->
