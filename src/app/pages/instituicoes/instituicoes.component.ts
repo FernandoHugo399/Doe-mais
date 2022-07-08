@@ -1,4 +1,8 @@
+import { InstitutionsService } from './../../services/institutions/institutions.service';
 import { Component, OnInit } from '@angular/core';
+import { Institutions } from 'src/app/services/institutions/institutions.model';
+import GlobalVars from 'src/app/global/global.model';
+import { catchError, empty } from 'rxjs';
 
 @Component({
   selector: 'app-instituicoes',
@@ -6,10 +10,15 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./instituicoes.component.scss']
 })
 export class InstituicoesComponent implements OnInit {
-
-  constructor() { }
+  public messageError: string = ''
+  public institutions!: Institutions
+  constructor(private InstitutionsService: InstitutionsService) { }
 
   ngOnInit(): void {
+    this.getAllInstitutions()
   }
 
+  getAllInstitutions(): void{
+    this.InstitutionsService.getAllInstitutions().subscribe(res => { this.institutions = res; })
+  }
 }

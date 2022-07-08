@@ -8,57 +8,14 @@
 <section class="instituicoes" style="background-image: url('assets/images/background2.png');">
   <div class="center">
     <h2>Conheça nossas <strong>instituições</strong></h2>
+    <p *ngIf="messageError" class="messageError">{{messageError}}</p>
+    <div class="flex-instituicoes" *ngIf="institutions">
 
-    <div class="flex-instituicoes">
-      <div class="flex-item">
-        <img src="assets/images/ex01.png" alt="instituição">
-        <a routerLink="/saiba-mais/exemplo">Saiba mais</a>
+      <div class="flex-item" *ngFor="let institution of institutions.institutions">
+        <img src="https://storage.googleapis.com/quantum-ether-335121.appspot.com/{{institution.logo}}" alt="{{institution.nome}}">
+        <a routerLink="/saiba-mais/{{institution.id_instituicao}}">{{institution.nome}}</a>
       </div> <!-- flex-item -->
 
-      <div class="flex-item">
-        <img src="assets/images/ex04.png" alt="instituição">
-        <a routerLink="/saiba-mais/exemplo">Saiba mais</a>
-      </div> <!-- flex-item -->
-
-      <div class="flex-item">
-        <img src="assets/images/ex05.png" alt="instituição">
-        <a routerLink="/saiba-mais/exemplo">Saiba mais</a>
-      </div> <!-- flex-item -->
-
-      <div class="flex-item">
-        <img src="assets/images/ex01.png" alt="instituição">
-        <a routerLink="/saiba-mais/exemplo">Saiba mais</a>
-      </div> <!-- flex-item -->
-
-      <div class="flex-item">
-        <img src="assets/images/ex04.png" alt="instituição">
-        <a routerLink="/saiba-mais/exemplo">Saiba mais</a>
-      </div> <!-- flex-item -->
-
-      <div class="flex-item">
-        <img src="assets/images/ex05.png" alt="instituição">
-        <a routerLink="/saiba-mais/exemplo">Saiba mais</a>
-      </div> <!-- flex-item -->
-
-      <div class="flex-item">
-        <img src="assets/images/ex01.png" alt="instituição">
-        <a routerLink="/saiba-mais/exemplo">Saiba mais</a>
-      </div> <!-- flex-item -->
-
-      <div class="flex-item">
-        <img src="assets/images/ex04.png" alt="instituição">
-        <a routerLink="/saiba-mais/exemplo">Saiba mais</a>
-      </div> <!-- flex-item -->
-
-      <div class="flex-item">
-        <img src="assets/images/ex05.png" alt="instituição">
-        <a routerLink="/saiba-mais/exemplo">Saiba mais</a>
-      </div> <!-- flex-item -->
-
-      <div class="flex-item">
-        <img src="assets/images/ex01.png" alt="instituição">
-        <a routerLink="/saiba-mais/exemplo">Saiba mais</a>
-      </div> <!-- flex-item -->
     </div> <!-- flex-instituicoes -->
 
   </div> <!-- center -->
