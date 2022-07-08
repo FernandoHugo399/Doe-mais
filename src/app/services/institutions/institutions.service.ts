@@ -13,44 +13,29 @@ export class InstitutionsService implements IServiceInstitutions {
   constructor(private http: HttpClient, private router: Router) { }
 
   getAllInstitutions(): Observable<Institutions> {
-    return this.http.get<Institutions>(this.baseURL + '/institutionss')
+    return this.http.get<Institutions>(this.baseURL + '/institutions')
     .pipe(tap((res)=>{
-
       GlobalVars.verifyRequest(res)
       if(GlobalVars.messageError)
         this.router.navigate([''])
-
-    })).pipe(catchError(()=>{
-      GlobalVars.messageError = 'Ocorreu um erro inesperado'
-      return empty()
     }))
   }
 
   getInstitutionById(id: number): Observable<Institution> {
     return this.http.get<Institution>(this.baseURL + '/institution/' + id)
     .pipe(tap((res)=>{
-
       GlobalVars.verifyRequest(res)
       if(GlobalVars.messageError)
         this.router.navigate(['instituicoes'])
-
-    })).pipe(catchError(()=>{
-      GlobalVars.messageError = 'Ocorreu um erro inesperado'
-      return empty()
     }))
   }
 
   GetBankInformationsByIdOffInstitution(id: number): Observable<InstitutionBankInformation> {
     return this.http.get<InstitutionBankInformation>(this.baseURL + '/institution-information/' + id)
     .pipe(tap((res)=>{
-
       GlobalVars.verifyRequest(res)
       if(GlobalVars.messageError)
         this.router.navigate(['instituicoes'])
-
-    })).pipe(catchError(()=>{
-      GlobalVars.messageError = 'Ocorreu um erro inesperado'
-      return empty()
     }))
   }
 

@@ -2,7 +2,6 @@ import { InstitutionsService } from './../../services/institutions/institutions.
 import { Component, OnInit } from '@angular/core';
 import { Institutions } from 'src/app/services/institutions/institutions.model';
 import GlobalVars from 'src/app/global/global.model';
-import { catchError, empty } from 'rxjs';
 
 @Component({
   selector: 'app-instituicoes',
@@ -10,7 +9,7 @@ import { catchError, empty } from 'rxjs';
   styleUrls: ['./instituicoes.component.scss']
 })
 export class InstituicoesComponent implements OnInit {
-  public messageError: string = ''
+  public messageError!: string
   public institutions!: Institutions
   constructor(private InstitutionsService: InstitutionsService) { }
 
@@ -18,7 +17,11 @@ export class InstituicoesComponent implements OnInit {
     this.getAllInstitutions()
   }
 
-  getAllInstitutions(): void{
-    this.InstitutionsService.getAllInstitutions().subscribe(res => { this.institutions = res; })
+  getAllInstitutions(): void {
+    this.InstitutionsService.getAllInstitutions()
+    .subscribe(
+      res => { this.institutions = res },
+      (err)=> this.messageError = 'Ocorreu um erro interno'
+    )
   }
 }

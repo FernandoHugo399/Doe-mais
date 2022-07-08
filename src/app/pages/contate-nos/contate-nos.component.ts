@@ -22,10 +22,13 @@ export class ContateNosComponent implements IServiceContactMethods{
 
   constructor(private contactService: ContactService){ }
   public sendMessage(): void {
-    this.contactService.sendMessage(this.Message, this.inputSubmit).subscribe(()=>{
-      this.messageSuccess = GlobalVars.messageSuccess
-      this.messageError = GlobalVars.messageError
-    })
+    this.contactService.sendMessage(this.Message, this.inputSubmit).subscribe(
+      ()=>{
+        this.messageSuccess = GlobalVars.messageSuccess
+        this.messageError = GlobalVars.messageError
+      },
+      (err)=> this.messageError = 'Ocorreu um erro interno'
+    )
   }
 
 }

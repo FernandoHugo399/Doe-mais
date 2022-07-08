@@ -34,10 +34,6 @@ export class ContactService implements IServiceContact {
       inputSubmit.nativeElement.classList.remove('input-disabled')
       inputSubmit.nativeElement.disabled = false
     }))
-    .pipe(catchError(()=>{
-      GlobalVars.messageError = 'Ocorreu um erro inesperado'
-      return empty()
-    }))
   }
 
 }
