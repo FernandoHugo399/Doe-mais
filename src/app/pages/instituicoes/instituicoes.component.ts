@@ -1,7 +1,6 @@
 import { InstitutionsService } from './../../services/institutions/institutions.service';
 import { Component, OnInit } from '@angular/core';
 import { Institutions } from 'src/app/services/institutions/institutions.model';
-import GlobalVars from 'src/app/global/global.model';
 
 @Component({
   selector: 'app-instituicoes',
@@ -21,7 +20,7 @@ export class InstituicoesComponent implements OnInit {
     this.InstitutionsService.getAllInstitutions()
     .subscribe(
       res => { this.institutions = res },
-      (err)=> this.messageError = 'Ocorreu um erro interno'
+      err => this.messageError = 'Ocorreu um erro interno'
     )
   }
 }

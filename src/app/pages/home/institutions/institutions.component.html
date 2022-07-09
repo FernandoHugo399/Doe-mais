@@ -1,81 +1,16 @@
-<section class="section-carrossel">
+<section class="section-carrossel" *ngIf="institutions">
   <div class="center-carrossel">
     <div class="title">Conheça nossas Instituições</div>
     <swiper [config]="config">
 
       <div class="swiper-wrapper">
-        <div class="swiper-slide">
+        <div class="swiper-slide" *ngFor="let institution of institutions.institutions">
           <div class="slide">
-            <a routerLink="/saiba-mais/exemplo">
-              <img src="assets/images/ex04.png" alt="instituição">
+            <a routerLink="/saiba-mais/{{institution.id_instituicao}}">
+              <img src="https://storage.googleapis.com/quantum-ether-335121.appspot.com/{{institution.logo}}" alt="{{institution.nome}}">
             </a>
           </div> <!-- slide -->
         </div> <!-- swiper-slide -->
-
-        <div class="swiper-slide">
-          <div class="slide">
-            <a routerLink="/saiba-mais/exemplo">
-              <img src="assets/images/ex05.png" alt="instituição">
-            </a>
-          </div> <!-- slide -->
-        </div> <!-- swiper-slide -->
-
-        <div class="swiper-slide">
-          <div class="slide">
-            <a routerLink="/saiba-mais/exemplo">
-              <img src="assets/images/ex01.png" alt="instituição">
-            </a>
-          </div> <!-- slide -->
-        </div> <!-- swiper-slide -->
-
-        <div class="swiper-slide">
-          <div class="slide">
-            <a routerLink="/saiba-mais/exemplo">
-              <img src="assets/images/ex04.png" alt="instituição">
-            </a>
-          </div> <!-- slide -->
-        </div> <!-- swiper-slide -->
-
-        <div class="swiper-slide">
-          <div class="slide">
-            <a routerLink="/saiba-mais/exemplo">
-              <img src="assets/images/ex05.png" alt="instituição">
-            </a>
-          </div> <!-- slide -->
-        </div> <!-- swiper-slide -->
-
-        <div class="swiper-slide">
-          <div class="slide">
-            <a routerLink="/saiba-mais/exemplo">
-              <img src="assets/images/ex01.png" alt="instituição">
-            </a>
-          </div> <!-- slide -->
-        </div> <!-- swiper-slide -->
-
-        <div class="swiper-slide">
-          <div class="slide">
-            <a routerLink="/saiba-mais/exemplo">
-              <img src="assets/images/ex04.png" alt="instituição">
-            </a>
-          </div> <!-- slide -->
-        </div> <!-- swiper-slide -->
-
-        <div class="swiper-slide">
-          <div class="slide">
-            <a routerLink="/saiba-mais/exemplo">
-              <img src="assets/images/ex05.png" alt="instituição">
-            </a>
-          </div> <!-- slide -->
-        </div> <!-- swiper-slide -->
-
-        <div class="swiper-slide">
-          <div class="slide">
-            <a routerLink="/saiba-mais/exemplo">
-              <img src="assets/images/ex01.png" alt="instituição">
-            </a>
-          </div> <!-- slide -->
-        </div> <!-- swiper-slide -->
-
       </div> <!-- swiper-wrapper -->
     </swiper>
 
