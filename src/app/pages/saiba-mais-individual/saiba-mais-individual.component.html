@@ -20,8 +20,10 @@
           <h3>Informações de contato</h3>
           <ul>
             <li *ngIf="institution.institution.website">Site: {{institution.institution.website}}</li>
-            <li>E-mail: Exemple@email.com</li>
-            <li>Telefone: (81) 90000-0000</li>
+            <li>Email: {{institution.institution.email}}</li>
+            <li>Telefone: {{institution.institution.telefone_1}}</li>
+            <li *ngIf="institution.institution.telefone_2">Telefone: {{institution.institution.telefone_2}}</li>
+            <li>Localização: {{institution.institution.localizacao}}</li>
           </ul>
         </div> <!-- info-contact -->
       </div> <!-- contact -->
