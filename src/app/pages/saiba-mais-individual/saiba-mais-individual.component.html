@@ -1,6 +1,6 @@
-<section class="single-informations" style="background-image: url('assets/images/background3.png');">
+<section class="single-informations" style="background-image: url('assets/images/background3.png');" *ngIf="institution">
   <div class="center">
-    <div class="flex-container" *ngIf="institution">
+    <div class="flex-container">
       <img src="https://storage.googleapis.com/quantum-ether-335121.appspot.com/{{institution.institution.logo}}" alt="{{institution.institution.nome}}">
       <h2>A SUA AJUDA TRANSFORMA VIDAS!</h2>
       <p>{{institution.institution.sobre_curto}}</p>
@@ -9,7 +9,7 @@
   </div> <!-- center -->
 </section> <!-- single-informations -->
 
-<section class="informations">
+<section class="informations" *ngIf="institution">
   <div class="center">
     <div class="flex-container">
       <h2>SAIBA MAIS SOBRE A INSTITUIÇÃO SELECIONADA</h2>
