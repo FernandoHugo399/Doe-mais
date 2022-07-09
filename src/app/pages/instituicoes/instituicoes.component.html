@@ -7,8 +7,8 @@
 
 <section class="instituicoes" style="background-image: url('assets/images/background2.png');">
   <div class="center">
-    <h2>Conheça nossas <strong>instituições</strong></h2>
     <p *ngIf="messageError" class="messageError">{{messageError}}</p>
+    <h2>Conheça nossas <strong>instituições</strong></h2>
     <div class="flex-instituicoes" *ngIf="institutions">
 
       <div class="flex-item" *ngFor="let institution of institutions.institutions">

@@ -1,3 +1,4 @@
+import GlobalVars from 'src/app/global/global.model';
 import { InstitutionsService } from './../../services/institutions/institutions.service';
 import { Component, OnInit } from '@angular/core';
 import { Institutions } from 'src/app/services/institutions/institutions.model';
@@ -13,6 +14,7 @@ export class InstituicoesComponent implements OnInit {
   constructor(private InstitutionsService: InstitutionsService) { }
 
   ngOnInit(): void {
+    this.messageError = GlobalVars.messageError
     this.getAllInstitutions()
   }
 

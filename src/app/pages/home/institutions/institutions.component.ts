@@ -9,7 +9,6 @@ import { SwiperOptions } from 'swiper';
   styleUrls: ['./institutions.component.scss']
 })
 export class InstitutionsComponent implements OnInit{
-  public messageError!: string
   public institutions!: Institutions
 
   config: SwiperOptions = {
@@ -65,9 +64,6 @@ export class InstitutionsComponent implements OnInit{
 
   getAllInstitutions(): void {
     this.InstitutionsService.getAllInstitutions()
-    .subscribe(
-      res => { this.institutions = res },
-      (err)=> this.messageError = 'Ocorreu um erro interno'
-    )
+    .subscribe( res =>  this.institutions = res )
   }
 }

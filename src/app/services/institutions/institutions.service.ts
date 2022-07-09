@@ -1,7 +1,7 @@
 import { Router } from '@angular/router';
 import { Institution, InstitutionBankInformation, Institutions, IServiceInstitutions } from './institutions.model';
 import { Injectable } from '@angular/core';
-import { catchError, empty, Observable, tap } from 'rxjs';
+import { Observable, tap } from 'rxjs';
 import GlobalVars from 'src/app/global/global.model';
 import { HttpClient } from '@angular/common/http';
 
@@ -16,12 +16,10 @@ export class InstitutionsService implements IServiceInstitutions {
     return this.http.get<Institutions>(this.baseURL + '/institutions')
     .pipe(tap((res)=>{
       GlobalVars.verifyRequest(res)
-      if(GlobalVars.messageError)
-        this.router.navigate([''])
     }))
   }
 
-  getInstitutionById(id: number): Observable<Institution> {
+  getInstitutionById(id: string): Observable<Institution> {
     return this.http.get<Institution>(this.baseURL + '/institution/' + id)
     .pipe(tap((res)=>{
       GlobalVars.verifyRequest(res)
@@ -30,7 +28,7 @@ export class InstitutionsService implements IServiceInstitutions {
     }))
   }
 
-  GetBankInformationsByIdOffInstitution(id: number): Observable<InstitutionBankInformation> {
+  GetBankInformationsByIdOffInstitution(id: string): Observable<InstitutionBankInformation> {
     return this.http.get<InstitutionBankInformation>(this.baseURL + '/institution-information/' + id)
     .pipe(tap((res)=>{
       GlobalVars.verifyRequest(res)

@@ -55,6 +55,6 @@ export interface InstitutionBankInformation{
 
 export interface IServiceInstitutions {
   getAllInstitutions(): Observable<Institutions>
-  getInstitutionById(id: number): Observable<Institution>
-  GetBankInformationsByIdOffInstitution(id: number): Observable<InstitutionBankInformation>
+  getInstitutionById(id: string): Observable<Institution>
+  GetBankInformationsByIdOffInstitution(id: string): Observable<InstitutionBankInformation>
 }

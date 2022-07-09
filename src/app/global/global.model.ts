@@ -15,6 +15,11 @@ export default class GlobalVars {
       this.messageSuccess = ''
     }
   }
+
+  public static cleanVars(): void{
+    this.messageError = ''
+    this.messageSuccess = ''
+  }
 }
 
 export interface IRequest{

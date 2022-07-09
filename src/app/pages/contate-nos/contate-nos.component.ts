@@ -26,6 +26,7 @@ export class ContateNosComponent implements IServiceContactMethods{
       ()=>{
         this.messageSuccess = GlobalVars.messageSuccess
         this.messageError = GlobalVars.messageError
+        GlobalVars.cleanVars()
       },
       (err)=> this.messageError = 'Ocorreu um erro interno'
     )
