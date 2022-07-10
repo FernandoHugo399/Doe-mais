@@ -1,3 +1,4 @@
+import { ToastrService } from 'ngx-toastr';
 import { ISendMessageDTO, IServiceContactMethods } from './../../../services/contact/contact.model';
 import { Component, ViewChild } from '@angular/core';
 import { ContactService } from 'src/app/services/contact/contact.service';
@@ -20,16 +21,25 @@ export class ContactComponent implements IServiceContactMethods {
     mensagem: ''
   }
 
-  constructor(private contactService: ContactService){ }
+  constructor(private contactService: ContactService, private toastr: ToastrService){ }
+
   public sendMessage(): void {
     this.contactService.sendMessage(this.Message, this.inputSubmit)
     .subscribe(
       ()=>{
-        this.messageSuccess = GlobalVars.messageSuccess
-        this.messageError = GlobalVars.messageError
+        if(!GlobalVars.messageSuccess) this.errorToastr(GlobalVars.messageError)
+        else this.successToastr()
         GlobalVars.cleanVars()
       },
-      (err)=> this.messageError = 'Ocorreu um erro interno'
+      (err)=> this.errorToastr('Ocorreu um erro interno')
     )
+  }
+
+  public errorToastr(message: string): void{
+    this.toastr.error(message, 'Erro')
+  }
+
+  public successToastr(): void{
+    this.toastr.success('Mensagem enviada com sucesso')
   }
 }
