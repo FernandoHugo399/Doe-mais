@@ -16,7 +16,6 @@ footer .flex-container{
   justify-content: space-between;
 }
 
-
 .logo a img{
   width: 280px;
 }
@@ -55,6 +54,20 @@ footer .flex-container{
 .menu-footer li {
   padding: 8px 0;
   list-style-type: none;
+}
+
+footer .credits{
+  border-top: 2px solid white;
+  padding: 8px 2%;
+  width: 100%;
+  text-align: center;
+  background-color: var(--main-background-color);
+  color: var(--color-text-white);
+}
+
+footer .credits a{
+  text-decoration: none;
+  color: var(--color-main-icons);
 }
 
 @media screen and (max-width: 1600px){
