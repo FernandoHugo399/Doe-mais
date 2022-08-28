@@ -10,7 +10,7 @@
     <h2>Conheça nossas <strong>instituições</strong></h2>
     <div class="flex-instituicoes" *ngIf="institutions">
 
-      <div class="flex-item" *ngFor="let institution of institutions.institutions">
+      <div class="flex-item" *ngFor="let institution of institutions">
         <img src="https://storage.googleapis.com/quantum-ether-335121.appspot.com/{{institution.logo}}" alt="{{institution.nome}}">
         <a routerLink="/saiba-mais/{{institution.id_instituicao}}">{{institution.nome}}</a>
       </div> <!-- flex-item -->

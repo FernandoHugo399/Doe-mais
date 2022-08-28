@@ -1,6 +1,6 @@
 import { InstitutionsService } from './../../../services/institutions/institutions.service';
 import { Component, OnInit } from '@angular/core';
-import { Institutions } from 'src/app/services/institutions/institutions.model';
+import { Institution } from 'src/app/services/institutions/institutions.model';
 import { SwiperOptions } from 'swiper';
 
 @Component({
@@ -9,7 +9,7 @@ import { SwiperOptions } from 'swiper';
   styleUrls: ['./institutions.component.scss']
 })
 export class InstitutionsComponent implements OnInit{
-  public institutions!: Institutions
+  public institutions!: Institution[]
 
   config: SwiperOptions = {
     slidesPerView: 1,

@@ -1,9 +1,9 @@
 <section class="single-informations" style="background-image: url('assets/images/background3.png');" *ngIf="institutionBankInformation">
   <div class="center">
     <div class="flex-container">
-      <img src="https://storage.googleapis.com/quantum-ether-335121.appspot.com/{{institutionBankInformation.institutionInformation.logo}}" alt="{{institutionBankInformation.institutionInformation.nome}}}">
+      <img src="https://storage.googleapis.com/quantum-ether-335121.appspot.com/{{institutionBankInformation.logo}}" alt="{{institutionBankInformation.nome}}}">
       <h2>A SUA AJUDA TRANSFORMA VIDAS!</h2>
-      <p>{{institutionBankInformation.institutionInformation.sobre_curto}}</p>
+      <p>{{institutionBankInformation.sobre_curto}}</p>
     </div> <!-- flex-container -->
   </div> <!-- center -->
 </section> <!-- single-informations -->
@@ -14,20 +14,20 @@
         <h3>Doação em dinheiro</h3>
 
         <div class="informations">
-          <h4>{{institutionBankInformation.institutionInformation.banco_pix_1}}</h4>
-          <p><strong>PIX:</strong> {{institutionBankInformation.institutionInformation.pix_1}}</p>
-          <img src="https://storage.googleapis.com/quantum-ether-335121.appspot.com/{{institutionBankInformation.institutionInformation.qr_code_pix_1}}">
+          <h4>{{institutionBankInformation.banco_pix_1}}</h4>
+          <p><strong>PIX:</strong> {{institutionBankInformation.pix_1}}</p>
+          <img src="https://storage.googleapis.com/quantum-ether-335121.appspot.com/{{institutionBankInformation.qr_code_pix_1}}">
         </div> <!-- informations -->
 
-        <div class="informations" *ngIf="institutionBankInformation.institutionInformation.banco_pix_2">
-          <h4>{{institutionBankInformation.institutionInformation.banco_pix_2}}</h4>
-          <p><strong>PIX:</strong> {{institutionBankInformation.institutionInformation.pix_2}}</p>
-          <img src="https://storage.googleapis.com/quantum-ether-335121.appspot.com/{{institutionBankInformation.institutionInformation.qr_code_pix_2}}">
+        <div class="informations" *ngIf="institutionBankInformation.banco_pix_2">
+          <h4>{{institutionBankInformation.banco_pix_2}}</h4>
+          <p><strong>PIX:</strong> {{institutionBankInformation.pix_2}}</p>
+          <img src="https://storage.googleapis.com/quantum-ether-335121.appspot.com/{{institutionBankInformation.qr_code_pix_2}}">
         </div> <!-- informations -->
 
         <div class="informations">
           <h4>Localização</h4>
-          <span>{{institutionBankInformation.institutionInformation.localizacao}}</span>
+          <span>{{institutionBankInformation.localizacao}}</span>
         </div> <!-- informations -->
 
       </div> <!-- payment-informations -->

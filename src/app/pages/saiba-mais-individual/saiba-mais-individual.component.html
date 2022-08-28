@@ -1,9 +1,9 @@
 <section class="single-informations" style="background-image: url('assets/images/background3.png');" *ngIf="institution">
   <div class="center">
     <div class="flex-container">
-      <img src="https://storage.googleapis.com/quantum-ether-335121.appspot.com/{{institution.institution.logo}}" alt="{{institution.institution.nome}}">
+      <img src="https://storage.googleapis.com/quantum-ether-335121.appspot.com/{{institution.logo}}" alt="{{institution.nome}}">
       <h2>A SUA AJUDA TRANSFORMA VIDAS!</h2>
-      <p>{{institution.institution.sobre_curto}}</p>
+      <p>{{institution.sobre_curto}}</p>
       <a routerLink="/doar-agora/{{this.id}}">Doar agora</a>
     </div> <!-- flex-container -->
   </div> <!-- center -->
@@ -13,17 +13,17 @@
   <div class="center">
     <div class="flex-container">
       <h2>SAIBA MAIS SOBRE A INSTITUIÇÃO SELECIONADA</h2>
-      <p>{{institution.institution.sobre}}</p>
+      <p>{{institution.sobre}}</p>
       <div class="contact">
-        <img src="https://storage.googleapis.com/quantum-ether-335121.appspot.com/{{institution.institution.logo}}" alt="{{institution.institution.nome}}">
+        <img src="https://storage.googleapis.com/quantum-ether-335121.appspot.com/{{institution.logo}}" alt="{{institution.nome}}">
         <div class="info-contact">
           <h3>Informações de contato</h3>
           <ul>
-            <li *ngIf="institution.institution.website">Site: {{institution.institution.website}}</li>
-            <li>Email: {{institution.institution.email}}</li>
-            <li>Telefone: {{institution.institution.telefone_1}}</li>
-            <li *ngIf="institution.institution.telefone_2">Telefone: {{institution.institution.telefone_2}}</li>
-            <li>Localização: {{institution.institution.localizacao}}</li>
+            <li *ngIf="institution.website">Site: {{institution.website}}</li>
+            <li>Email: {{institution.email}}</li>
+            <li>Telefone: {{institution.telefone_1}}</li>
+            <li *ngIf="institution.telefone_2">Telefone: {{institution.telefone_2}}</li>
+            <li>Localização: {{institution.localizacao}}</li>
           </ul>
         </div> <!-- info-contact -->
       </div> <!-- contact -->

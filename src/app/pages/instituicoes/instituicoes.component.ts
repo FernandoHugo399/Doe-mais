@@ -1,7 +1,7 @@
 import GlobalVars from 'src/app/global/global.model';
 import { InstitutionsService } from './../../services/institutions/institutions.service';
 import { Component, OnInit } from '@angular/core';
-import { Institutions } from 'src/app/services/institutions/institutions.model';
+import { Institution } from 'src/app/services/institutions/institutions.model';
 import { ToastrService } from 'ngx-toastr';
 
 @Component({
@@ -10,7 +10,7 @@ import { ToastrService } from 'ngx-toastr';
   styleUrls: ['./instituicoes.component.scss']
 })
 export class InstituicoesComponent implements OnInit {
-  public institutions!: Institutions
+  public institutions!: Institution[]
   constructor(private InstitutionsService: InstitutionsService, private toastr: ToastrService) { }
 
   ngOnInit(): void {

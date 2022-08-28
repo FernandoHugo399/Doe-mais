@@ -4,7 +4,7 @@
     <swiper [config]="config">
 
       <div class="swiper-wrapper">
-        <div class="swiper-slide" *ngFor="let institution of institutions.institutions">
+        <div class="swiper-slide" *ngFor="let institution of institutions">
           <div class="slide">
             <a routerLink="/saiba-mais/{{institution.id_instituicao}}">
               <img src="https://storage.googleapis.com/quantum-ether-335121.appspot.com/{{institution.logo}}" alt="{{institution.nome}}">

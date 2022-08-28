@@ -1,5 +1,5 @@
 import { Router } from '@angular/router';
-import { Institution, InstitutionBankInformation, Institutions, IServiceInstitutions } from './institutions.model';
+import { Institution, InstitutionBankInformation, IServiceInstitutions } from './institutions.model';
 import { Injectable } from '@angular/core';
 import { Observable, tap } from 'rxjs';
 import GlobalVars from 'src/app/global/global.model';
@@ -12,8 +12,8 @@ export class InstitutionsService implements IServiceInstitutions {
   private baseURL = GlobalVars.baseURL
   constructor(private http: HttpClient, private router: Router) { }
 
-  getAllInstitutions(): Observable<Institutions> {
-    return this.http.get<Institutions>(this.baseURL + '/institutions')
+  getAllInstitutions(): Observable<Institution[]> {
+    return this.http.get<Institution[]>(this.baseURL + '/institutions')
     .pipe(tap((res)=>{
       GlobalVars.verifyRequest(res)
     }))
